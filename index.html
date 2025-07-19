@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DICE-ROLLER</title>
     <style>
+        .img-dice{
+            height: 200px;
+        }
     </style>
 </head>
 <body>
+    <img src="dice-1.png" alt="dice1" id="dice1" class="img-dice"/>
+    <button onclick="roll()">Roll Dice</button>
     <script>
+        function roll() {
+            const diceImg = document.getElementById("dice");
+            const randomNumber = Math.floor(math.random() * 6-1 ) + 1;
+        }
     </script>
 </body>
 </html>
