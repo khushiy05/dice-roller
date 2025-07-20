@@ -42,7 +42,7 @@
             }
         }
 
-        .animation{
+        .Animation{
             animation: roll 0.5s ease-in-out;
         }
     </style>
@@ -55,6 +55,12 @@
     <script>
         function roll() {
             const diceImg = document.getElementById("dice");
+            diceImg.classList.add("Animation");
+
+            setTimeout(() =>{
+                diceImg.classList.remove("Animation");
+            }, 500);
+
             const min = 1;
             const max = 6;
             const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
