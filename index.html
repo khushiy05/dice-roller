@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DICE-ROLLER</title>
     <style>
-        body {
+    body {
       margin: 0;
       padding: 0;
       height: 100vh;
-      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      background: linear-gradient(to right, #ffe0ac, #f4a261, #e76f51);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
       justify-content: center;
@@ -18,39 +18,41 @@
     }
 
     .img-dice{
-        height: 200px;
-        margin-bottom: 50px;
+      height: 200px;
+      margin-bottom: 50px;
     }
     
     .img-dice:hover{
-        transform: scale(1.05);
+      transform: scale(1.05);
     }
-    .container{
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 0 30px #ffb6b9;
-        border-radius: 20px;
-        }
+    .container {
+      width: 400px;
+      height: 400px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(244, 162, 97, 0.3);;
+      border-radius: 20px;
+    }
 
-        .btn-roll{
-            padding: 10px 20px;
-            font-size: 20px;
-            background-color: #FFBC4C;
-            color: aliceblue;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: bold;
-        }
+    .btn-roll{
+      padding: 20px 30px;
+      font-size: 20px;
+      background-color: #f4a261;
+      color: aliceblue;
+      border:  none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
 
-        .btn-roll:hover{
-        background: #ff758c;
-        transform: scale(1.05);
-        }
+    .btn-roll:hover{
+      background: #e76f51;
+      transform: scale(1.05);
+    }
 
         @keyframes roll {
             0% {
